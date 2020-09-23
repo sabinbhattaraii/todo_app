@@ -25,7 +25,7 @@ SECRET_KEY = 'xc+2wiiavq%(fm-(az!=uzb#!$dt$tv8i#u9cbtd0)jhi7-kn%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','sabin-todo.herokuapp.com']
 
 
 # Application definition
