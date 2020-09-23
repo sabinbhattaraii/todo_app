@@ -1,0 +1,19 @@
+<!-- todo/home.html-->
+
+{% extends 'todo/base.html' %}
+
+{%block content%}
+
+        <div>
+            <a href="{% url 'todo_new'%}">+New todo</a>
+        </div>
+    {% for todo in object_list%}
+        <div class="post-entry">
+            <h2><a href="{% url 'detail' todo.pk %}">{{ todo.content}} </a></h2>
+            <a href="{% url 'todo_edit' todo.pk %}">Edit Todo</a> |
+            <a href="{% url 'todo_delete' todo.pk %}"> Delete Todo </a>
+        
+        </div>
+    {% endfor %}
+
+{% endblock content %}

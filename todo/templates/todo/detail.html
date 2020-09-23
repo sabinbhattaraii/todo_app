@@ -1,0 +1,11 @@
+<!-- todo/detail.html-->
+
+{% extends 'todo/base.html' %}
+
+{% block content%}
+    <div class='post-entry'>
+      <h1>  {{ todo.content }} </h1>
+    </div>
+    <a href="{% url 'todo_edit' todo.pk %}">Edit Todo</a> |
+    <a href="{% url 'todo_delete' todo.pk%}">Delete Todo</a>
+{% endblock content%}

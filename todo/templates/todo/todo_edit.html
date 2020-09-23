@@ -1,0 +1,10 @@
+<!-- todo/todo_edit.html-->
+{% extends 'todo/base.html'%}
+
+{%block content%}
+<h1> Edit todo</h1>
+    <form action='' method='post'>{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value='Edit todo'/>
+    </form>
+{% endblock content%}
